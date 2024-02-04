@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindMosque.API", "src\FindMosque.API\FindMosque.API.csproj", "{2B589FC0-2CD4-4BC5-885A-8D29CEB07958}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindMosque.Domain", "src\FindMosque.Domain\FindMosque.Domain.csproj", "{482D9EEB-9810-4617-BFEB-1011A541F51F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindMosque.Application", "src\FindMosque.Application\FindMosque.Application.csproj", "{BEE0FC67-86CB-4C9E-950D-6F744EF5E1C1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindMosque.Infrastructure", "src\FindMosque.Infrastructure\FindMosque.Infrastructure.csproj", "{3CD18B88-2B15-4F9B-8BFF-38ACC3CB801B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2B589FC0-2CD4-4BC5-885A-8D29CEB07958}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B589FC0-2CD4-4BC5-885A-8D29CEB07958}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B589FC0-2CD4-4BC5-885A-8D29CEB07958}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B589FC0-2CD4-4BC5-885A-8D29CEB07958}.Release|Any CPU.Build.0 = Release|Any CPU
+		{482D9EEB-9810-4617-BFEB-1011A541F51F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{482D9EEB-9810-4617-BFEB-1011A541F51F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{482D9EEB-9810-4617-BFEB-1011A541F51F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{482D9EEB-9810-4617-BFEB-1011A541F51F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BEE0FC67-86CB-4C9E-950D-6F744EF5E1C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEE0FC67-86CB-4C9E-950D-6F744EF5E1C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEE0FC67-86CB-4C9E-950D-6F744EF5E1C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEE0FC67-86CB-4C9E-950D-6F744EF5E1C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3CD18B88-2B15-4F9B-8BFF-38ACC3CB801B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CD18B88-2B15-4F9B-8BFF-38ACC3CB801B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CD18B88-2B15-4F9B-8BFF-38ACC3CB801B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CD18B88-2B15-4F9B-8BFF-38ACC3CB801B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
