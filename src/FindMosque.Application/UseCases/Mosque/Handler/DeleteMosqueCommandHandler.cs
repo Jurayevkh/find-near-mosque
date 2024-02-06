@@ -1,7 +1,6 @@
 ﻿using FindMosque.Application.Abstractions;
 using FindMosque.Application.UseCases.Mosque.Command;
 using MediatR;
-using Microsoft.EntityFrameworkCore;
 
 namespace FindMosque.Application.UseCases.Mosque.Handler;
 
