@@ -1,6 +1,8 @@
-﻿namespace FindMosque.Application.UseCases.Mosque.Command;
+﻿using MediatR;
 
-public class DeleteMosqueCommand
+namespace FindMosque.Application.UseCases.Mosque.Command;
+
+public class DeleteMosqueCommand:IRequest<bool>
 {
     public required string Name { get; set; }
 }
