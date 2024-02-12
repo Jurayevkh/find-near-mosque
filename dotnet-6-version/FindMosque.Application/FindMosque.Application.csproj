@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Abstraction\" />
+    <None Remove="UseCases\" />
+    <None Remove="UseCases\Mosque\" />
+    <None Remove="UseCases\Mosque\Command\" />
+    <None Remove="UseCases\Mosque\Handler\" />
+    <None Remove="UseCases\Mosque\Query\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Abstraction\" />
+    <Folder Include="UseCases\" />
+    <Folder Include="UseCases\Mosque\" />
+    <Folder Include="UseCases\Mosque\Command\" />
+    <Folder Include="UseCases\Mosque\Handler\" />
+    <Folder Include="UseCases\Mosque\Query\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FindMosque.Domain\FindMosque.Domain.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="11.0.0" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="7.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="7.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.11" />
+  </ItemGroup>
+</Project>
