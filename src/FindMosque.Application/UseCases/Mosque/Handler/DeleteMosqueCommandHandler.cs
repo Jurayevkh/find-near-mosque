@@ -17,7 +17,7 @@ public class DeleteMosqueCommandHandler : IRequestHandler<DeleteMosqueCommand, b
     {
         try
         {
-            var mosque = await _applicationDbContext.Mosque.FirstOrDefaultAsync(mosque=>mosque.Name==request.Name);
+            var mosque = _applicationDbContext.Mosque.FirstOrDefault(mosque=>mosque.Name==request.Name);
             if (mosque is null)
                 return false;
             _applicationDbContext.Mosque.Remove(mosque);

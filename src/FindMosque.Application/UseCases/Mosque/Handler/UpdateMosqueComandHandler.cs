@@ -1,7 +1,6 @@
 ﻿using FindMosque.Application.Abstractions;
 using FindMosque.Application.UseCases.Mosque.Command;
 using MediatR;
-
 namespace FindMosque.Application.UseCases.Mosque.Handler;
 
 public class UpdateMosqueComandHandler : IRequestHandler<UpdateMosqueCommand, bool>
@@ -17,7 +16,7 @@ public class UpdateMosqueComandHandler : IRequestHandler<UpdateMosqueCommand, bo
     {
         try
         {
-            var mosque = await _applicationDbContext.Mosque.FirstOrDefaultAsync(mosque=>mosque.Name==request.OldName);
+            var mosque = _applicationDbContext.Mosque.FirstOrDefault(mosque=>mosque.Name==request.OldName);
             if (mosque is null)
                 return false;
             mosque.Name = request.Name ?? mosque.Name;

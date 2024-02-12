@@ -22,9 +22,8 @@ public class CreateMosqueCommandHandler : IRequestHandler<CreateMosqueCommand, b
             var isHaveMosque = _applicationDbContext.Mosque.FirstOrDefault(mosque=>mosque.Name==request.Name);
 
             if(isHaveMosque is not null)
-            {
                 return false;
-            }
+            
 
             Mosque mosque = new Mosque()
             {
